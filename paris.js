@@ -6,7 +6,6 @@ function showPage(pageId) {
     if (target) {
         target.style.display = 'block';
     }
-    // Active nav link
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.classList.toggle('active', link.dataset.page === pageId);
     });
@@ -123,7 +122,7 @@ let langMenu;
 let langButtons = [];
 
 async function loadLanguage(lang) {
-    const response = await fetch(`/languages/${lang}.json`);
+    const response = await fetch(`./languages/${lang}.json`);
 
     if (!response.ok) {
         throw new Error(`Language file not found: ${lang}`);
@@ -170,7 +169,6 @@ async function loadLanguage(lang) {
         }
 
         if (!replaced) {
-            // append a text node so label/input pairs keep their inputs intact
             element.appendChild(document.createTextNode(translations[key]));
         }
     });
@@ -196,7 +194,6 @@ function setupLanguageSwitcher() {
         });
     });
 
-    // Close menus when clicking outside any language dropdown
     document.addEventListener('click', (e) => {
         if (!e.target.closest('.lang-dropdown')) {
             langMenu?.classList.remove('show');
@@ -205,7 +202,6 @@ function setupLanguageSwitcher() {
 
     const savedLang = localStorage.getItem('siteLang') || 'fr-FR';
     loadLanguage(savedLang).catch(() => {
-        // ignore if language loading fails
     });
 }
 
@@ -251,7 +247,7 @@ function setupAccessibility() {
             accessibilityMenu.classList.remove('show');
         });
 
-    // Large text mode
+    
     document
         .getElementById('toggle-large-text')
         ?.addEventListener('click', () => {
@@ -270,7 +266,6 @@ function setupAccessibility() {
             accessibilityMenu.classList.remove('show');
         });
 
-    // Dyslexia-friendly font
     document
         .getElementById('toggle-dyslexia-font')
         ?.addEventListener('click', () => {
@@ -391,13 +386,11 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("fieldset").forEach(fs => {
     const labels = Array.from(fs.querySelectorAll("label"));
 
-    // shuffle (Fisher–Yates)
+    // shuffle
     for (let i = labels.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [labels[i], labels[j]] = [labels[j], labels[i]];
     }
-
-    // re-append shuffled labels
     labels.forEach(label => fs.appendChild(label));
   });
 });
