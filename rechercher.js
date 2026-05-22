@@ -65,7 +65,7 @@ async function loadSearchData() {
 
     const response =
         await fetch(
-            `/languages/${lang}.json`
+            `./languages/${lang}.json`
         );
 
     SEARCH_DATA =
