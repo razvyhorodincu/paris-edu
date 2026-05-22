@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Notre-Dame | Paris-Édu</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/256/203/203026.png">
+    <link rel="stylesheet" href="../paris.css">
+    <script src="../paris.js" defer></script>
+</head>
+<body>
+   <header>
+        <a href="../accueil.html" class="logo">Paris-Édu</a>
+        <ul class="header-links">
+            <li><a href="../accueil.html" data-i18n="header_home">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn" data-i18n="header_destinations">Destinations</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../tour_eiffel.html" data-i18n="dropdown_tour_eiffel">Tour Eiffel</a></li>
+                    <li><a href="../musee_louvre.html" data-i18n="dropdown_musee_louvre">Musée du Louvre</a></li>
+                    <li><a href="../chateau_versailles.html" data-i18n="dropdown_chateau_versailles">Château de Versailles</a></li>
+                    <li><a href="../notre-dame.html" data-i18n="dropdown_notre_dame">Notre-Dame de Paris</a></li>
+                    <li><a href="../disneyland.html" data-i18n="dropdown_disneyland">Disneyland Paris</a></li>
+                </ul>
+            </li>
+            <li><a href="../questionnaires.html" data-i18n="header_questionnaires">Questionnaires</a></li>
+            <li><a href="../contact.html" data-i18n="header_contact">Contactez-nous</a></li>
+            <form class="header-search" role="search" onsubmit="return false;">
+                <input type="search"
+                       class="header-search-input"
+                       placeholder="🔍"
+                       data-i18n-placeholder="search_placeholder">
+            </form>
+        </ul>
+    </header>
+
+    <div class="page">
+        <div class="detail-page">
+            <button class="back-btn" onclick="window.location.href='../questionnaires.html'"><span data-i18n="retour2">← Retour aux questionnaires</span></button>
+            <div class="detail-header">
+                <h1>Quiz : Notre-Dame de Paris</h1>
+            </div>
+
+            <div class="gallery">
+                <img src="https://www.friendsofnotredamedeparis.org/wp-content/uploads/2021/10/5-Additional-Ways-to-Support-Friends-of-Notre-Dame-de-Paris.jpeg" alt="Notre-Dame façade">
+                <img src="https://images.euronews.com/articles/stories/08/88/14/24/1536x864_cmsv2_56c2178f-884c-50c0-81b6-188322a7261b-8881424.jpg" alt="Intérieur après réouverture">
+                <img src="https://static.wixstatic.com/media/6b15df_b641fc85275644649e9d2ec51dd423ca~mv2.png/v1/fill/w_1000,h_998,al_c,q_90,usm_0.66_1.00_0.01/6b15df_b641fc85275644649e9d2ec51dd423ca~mv2.png" alt="Rosace">
+                <img src="https://img.freepik.com/photos-premium/vue-aerienne-cathedrale-notre-dame-paris_249973-547.jpg" alt="Vue aérienne">
+            </div>
+
+            <form id="notre-dame-quiz-form" class="quiz-form">
+                <fieldset>
+                    <legend data-i18n="q16">1. Quand la construction de Notre-Dame de Paris a-t-elle commencé ?</legend>
+                    <label data-i18n="q16_a1"><input type="radio" name="q16" value="1204"> 1204</label>
+                    <label data-i18n="q16_a2"><input type="radio" name="q16" value="1163"> 1163</label>
+                    <label data-i18n="q16_a3"><input type="radio" name="q16" value="1345"> 1345</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q17">2. Quel événement majeur a touché la cathédrale le 15 avril 2019 ?</legend>
+                    <label data-i18n="q17_a1"><input type="radio" name="q17" value="Inondation"> Une inondation</label>
+                    <label data-i18n="q17_a2"><input type="radio" name="q17" value="Incendie"> Un incendie dévastateur</label>
+                    <label data-i18n="q17_a3"><input type="radio" name="q17" value="Effondrement"> Un effondrement de la façade</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q18">3. Qui supervise actuellement les activités liturgiques de Notre-Dame ?</legend>
+                    <label data-i18n="q18_a1"><input type="radio" name="q18" value="Philippe Villeneuve"> Philippe Villeneuve</label>
+                    <label data-i18n="q18_a2"><input type="radio" name="q18" value="Emmanuel Macron"> Emmanuel Macron</label>
+                    <label data-i18n="q18_a3"><input type="radio" name="q18" value="Olivier Ribadeau Dumas"> Olivier Ribadeau Dumas</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q19">4. Quelle cloche emblématique de Notre-Dame pèse 13 tonnes ?</legend>
+                    <label data-i18n="q19_a1"><input type="radio" name="q19" value="Marie"> Marie</label>
+                    <label data-i18n="q19_a2"><input type="radio" name="q19" value="Emmanuel"> Emmanuel</label>
+                    <label data-i18n="q19_a3"><input type="radio" name="q19" value="Gabriel"> Gabriel</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q20">5. Quelle station de métro permet d’accéder directement à Notre-Dame ?</legend>
+                    <label data-i18n="q20_a1"><input type="radio" name="q20" value="Cité"> Cité (ligne 4)</label>
+                    <label data-i18n="q20_a2"><input type="radio" name="q20" value="Bastille"> Bastille (ligne 1)</label>
+                    <label data-i18n="q20_a3"><input type="radio" name="q20" value="Odéon"> Odéon (ligne 4)</label>
+                </fieldset>
+
+
+                <button type="submit"><span data-i18n="quiz_submit">Vérifier mes réponses</span></button>
+                <button type="reset"><span data-i18n="quiz_reset">Réinitialiser</span></button>
+</form>
+
+<div id="quiz-results" class="quiz-results"></div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-left">
+            <p data-i18n="footer_notice">© 2026  | Tous droits réservés</p>
+            <div class="footer-links">
+                <a href="privacy.html" data-i18n="footer_privacy">Confidentialité</a>
+                <a href="terms.html" data-i18n="footer_terms">Conditions d'Utilisation</a>
+                <a href="https://forms.gle/p7tvY1pFosFmPXE57" data-i18n="footer_survey" target="_blank">Questionnaire de satisfaction</a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="accessibility-dropdown">
+                <button class="accessibility-btn"><span data-i18n="accessibility_btn">Accessibilité</span></button>
+                <ul class="accessibility-menu">
+                    <li><button id="toggle-high-contrast"><span data-i18n="accessibility_contrast">Contraste élevé</span></button></li>
+                    <li><button id="toggle-large-text"><span data-i18n="accessibility_text">Texte plus grand</span></button></li>
+                    <li><button id="toggle-dyslexia-font"><span data-i18n="accessibility_dyslexia">Police dyslexie</span></button></li>
+                    <li><button id="reset-accessibility"><span data-i18n="accessibility_reset">Réinitialiser</span></button></li>
+                </ul>
+            </div>
+            <div class="lang-dropdown">
+                <button class="lang-btn"><span data-i18n="lang_btn">Langue</span></button>
+                <ul class="lang-menu">
+                    <li><button data-lang="fr-FR">Français</button></li>
+                    <li><button data-lang="en-US">English</button></li>
+                    <li><button data-lang="ro-RO">Română</button></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    const form = document.getElementById('notre-dame-quiz-form');
+    const resultsContainer = document.getElementById('quiz-results');
+
+    let quizLocked = false;
+
+    function getCheckedValues(name) {
+        return Array.from(form.querySelectorAll(`input[name="${name}"]:checked`)).map(i => i.value);
+    }
+
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+
+    function updateQuestionNumbers() {
+        form.querySelectorAll('fieldset').forEach((fieldset, index) => {
+            const legend = fieldset.querySelector('legend');
+            const text = legend.textContent.replace(/^\d+\.\s*/, '');
+            legend.textContent = `${index + 1}. ${text}`;
+        });
+    }
+
+    function shuffleQuizQuestions() {
+        const fieldsets = Array.from(form.querySelectorAll('fieldset'));
+        const buttons = Array.from(form.querySelectorAll('button'));
+        const shuffled = shuffleArray(fieldsets.slice());
+
+        shuffled.forEach(fieldset => form.insertBefore(fieldset, buttons[0]));
+
+        form.querySelectorAll('label').forEach(l => l.classList.add('quiz-label'));
+
+        updateQuestionNumbers();
+    }
+
+    function allQuestionsAnswered() {
+        const radios = Array.from(form.querySelectorAll('input[type="radio"]'));
+        const names = Array.from(new Set(radios.map(r => r.name))).filter(n => n);
+        return names.length > 0 && names.every(name => form.querySelector(`input[name="${name}"]:checked`) !== null);
+    }
+
+    function clearHighlights() {
+        form.querySelectorAll('label').forEach(l => {
+            l.classList.remove('correct', 'incorrect');
+        });
+    }
+
+    function lockQuiz() {
+        quizLocked = true;
+
+        form.querySelectorAll('input[type="radio"]').forEach(input => {
+            input.disabled = true;
+        });
+    }
+
+    function unlockQuiz() {
+        quizLocked = false;
+
+        form.querySelectorAll('input[type="radio"]').forEach(input => {
+            input.disabled = false;
+        });
+    }
+
+    shuffleQuizQuestions();
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        if (quizLocked) return;
+
+        if (!allQuestionsAnswered()) {
+            resultsContainer.innerHTML = `
+                <div class="quiz-score">
+                    <h2 style="color: var(--red);">
+                        Veuillez répondre à toutes les questions avant de vérifier.
+                    </h2>
+                </div>
+            `;
+            return;
+        }
+
+        clearHighlights();
+
+        const correctAnswers = {
+            q16: '1163',
+            q17: 'Incendie',
+            q18: 'Olivier Ribadeau Dumas',
+            q19: 'Emmanuel',
+            q20: 'Cité'
+        };
+
+        let score = 0;
+
+        const radioNames = Array.from(new Set(Array.from(form.querySelectorAll('input[type="radio"]')).map(r => r.name))).filter(n => n);
+
+        radioNames.forEach(name => {
+            const selected = form.querySelector(`input[name="${name}"]:checked`);
+            const selectedVal = selected ? selected.value : '';
+            const selectedLabel = selected ? selected.parentElement : null;
+
+            if (selectedVal === correctAnswers[name]) {
+                score += 20;
+
+                if (selectedLabel) {
+                    selectedLabel.classList.add('correct');
+                }
+
+            } else {
+                if (selectedLabel) {
+                    selectedLabel.classList.add('incorrect');
+                }
+            }
+        });
+
+        const percent = Math.round(score);
+        const questions = Math.round(percent / 20);
+
+        resultsContainer.innerHTML = `
+            <div class="quiz-score">
+                <h2 data-i18n="quiz_result">Résultat : ${percent}%</h2>
+                <p data-i18n="quiz_questions">Vous avez répondu correctement à ${questions} questions sur 5.</p>
+            </div>
+        `;
+        translatePage();
+        lockQuiz();
+    });
+    form.addEventListener('reset', function () {
+
+        setTimeout(() => {
+            clearHighlights();
+            resultsContainer.innerHTML = '';
+            unlockQuiz();
+            shuffleQuizQuestions();
+
+        }, 0);
+    });
+    </script>
+</body>
+</html>

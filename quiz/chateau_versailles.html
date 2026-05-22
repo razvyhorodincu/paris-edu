@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Château de Versailles | Paris-Édu</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/256/203/203026.png">
+    <link rel="stylesheet" href="../paris.css">
+    <script src="../paris.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="../accueil.html" class="logo">Paris-Édu</a>
+        <ul class="header-links">
+            <li><a href="../accueil.html" data-i18n="header_home">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn" data-i18n="header_destinations">Destinations</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../tour_eiffel.html" data-i18n="dropdown_tour_eiffel">Tour Eiffel</a></li>
+                    <li><a href="../musee_louvre.html" data-i18n="dropdown_musee_louvre">Musée du Louvre</a></li>
+                    <li><a href="../chateau_versailles.html" data-i18n="dropdown_chateau_versailles">Château de Versailles</a></li>
+                    <li><a href="../notre-dame.html" data-i18n="dropdown_notre_dame">Notre-Dame de Paris</a></li>
+                    <li><a href="../disneyland.html" data-i18n="dropdown_disneyland">Disneyland Paris</a></li>
+                </ul>
+            </li>
+            <li><a href="../questionnaires.html" data-i18n="header_questionnaires">Questionnaires</a></li>
+            <li><a href="../contact.html" data-i18n="header_contact">Contactez-nous</a></li>
+            <form class="header-search" role="search" onsubmit="return false;">
+                <input type="search"
+                       class="header-search-input"
+                       placeholder="🔍"
+                       data-i18n-placeholder="search_placeholder">
+            </form>
+        </ul>
+    </header>
+
+    <div class="page">
+        <div class="detail-page">
+            <button class="back-btn" onclick="window.location.href='../questionnaires.html'"><span data-i18n="retour2">← Retour aux questionnaires</span></button>
+            <div class="detail-header">
+                <h1>Quiz : Château de Versailles</h1>
+            </div>
+
+            <div class="gallery">
+                <img src="https://media.architecturaldigest.com/photos/674f78a04c235765ae456d52/3:2/w_6000,h_4000,c_limit/GettyImages-1814430880.jpg" alt="Château de Versailles">
+                <img src="https://www.hotel-roys-versailles.com/wp-content/uploads/roys-versailles/blog/hotel-des-roys-versailles-galerie-des-glaces.webp" alt="Galerie des Glaces">
+                <img src="https://en.chateauversailles.fr/sites/default/files/styles/visuel_principal_lieu/public/visuels_principaux/lieux/cthomas_garnier_dsc00459.jpg.webp?h=f3940517&itok=2ufi9C4S" alt="Jardins de Versailles">
+                <img src="https://lea.lighting/wp-content/uploads/2021/02/chateau_versailles_3.jpg" alt="Fontaines">
+            </div>
+
+            <form id="versailles-quiz-form" class="quiz-form">
+                <fieldset>
+                    <legend data-i18n="q1">1. Quel roi a transformé le château de Versailles en résidence royale majeure ?</legend>
+                    <label><input type="radio" name="q1" value="Napoléon"><span data-i18n="q1_a1">Napoléon</span></label>
+                    <label><input type="radio" name="q1" value="Louis XIII"><span data-i18n="q1_a2">Louis XIII</span></label>
+                    <label><input type="radio" name="q1" value="Louis XIV"><span data-i18n="q1_a3">Louis XIV</span></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q2">2. Quel service de train mène directement à Versailles Château - Rive Gauche ?</legend>
+                    <label><input type="radio" name="q2" value="RER C"><span data-i18n="q2_a1">RER C</span></label>
+                    <label><input type="radio" name="q2" value="Métro 1"><span data-i18n="q2_a2">Métro 1</span></label>
+                    <label><input type="radio" name="q2" value="RER A"><span data-i18n="q2_a3">RER A</span></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q3">3. Quel élément est bien lié aux jardins de Versailles ?</legend>
+                    <label><input type="radio" name="q3" value="Jardins Le Nôtre"><span data-i18n="q3_a1">Jardins Le Nôtre</span></label>
+                    <label><input type="radio" name="q3" value="Parc Disneyland"><span data-i18n="q3_a2">Parc Disneyland</span></label>
+                    <label><input type="radio" name="q3" value="Île de la Cité"><span data-i18n="q3_a3">Île de la Cité</span></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q4">4. Lequel de ces lieux est mentionné comme une visite possible à Versailles ?</legend>
+                    <label><input type="radio" name="q4" value="Salle du Trône"><span data-i18n="q4_a1">Salle du Trône</span></label>
+                    <label><input type="radio" name="q4" value="Galerie des Glaces"><span data-i18n="q4_a2">Galerie des Glaces</span></label>
+                    <label><input type="radio" name="q4" value="Tour Eiffel"><span data-i18n="q4_a3">Tour Eiffel</span></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q5">5. En 1796, le Château de Versailles est converti en :</legend>
+                    <label><input type="radio" name="q5" value="Musée"><span data-i18n="q5_a1">Musée</span></label>
+                    <label><input type="radio" name="q5" value="Bibliothèque"><span data-i18n="q5_a2">Bibliothèque</span></label>
+                    <label><input type="radio" name="q5" value="Hôtel"><span data-i18n="q5_a3">Hôtel</span></label>
+                </fieldset>
+
+                <button type="submit"><span data-i18n="quiz_submit">Vérifier mes réponses</span></button>
+                <button type="reset"><span data-i18n="quiz_reset">Réinitialiser</span></button>
+            </form>
+
+            <div id="quiz-results" class="quiz-results"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-left">
+            <p data-i18n="footer_notice">© 2026  | Tous droits réservés</p>
+            <div class="footer-links">
+                <a href="privacy.html" data-i18n="footer_privacy">Confidentialité</a>
+                <a href="terms.html" data-i18n="footer_terms">Conditions d'Utilisation</a>
+                <a href="https://forms.gle/p7tvY1pFosFmPXE57" data-i18n="footer_survey" target="_blank">Questionnaire de satisfaction</a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="accessibility-dropdown">
+                <button class="accessibility-btn"><span data-i18n="accessibility_btn">Accessibilité</span></button>
+                <ul class="accessibility-menu">
+                    <li><button id="toggle-high-contrast"><span data-i18n="accessibility_contrast">Contraste élevé</span></button></li>
+                    <li><button id="toggle-large-text"><span data-i18n="accessibility_text">Texte plus grand</span></button></li>
+                    <li><button id="toggle-dyslexia-font"><span data-i18n="accessibility_dyslexia">Police dyslexie</span></button></li>
+                    <li><button id="reset-accessibility"><span data-i18n="accessibility_reset">Réinitialiser</span></button></li>
+                </ul>
+            </div>
+            <div class="lang-dropdown">
+                <button class="lang-btn"><span data-i18n="lang_btn">Langue</span></button>
+                <ul class="lang-menu">
+                    <li><button data-lang="fr-FR">Français</button></li>
+                    <li><button data-lang="en-US">English</button></li>
+                    <li><button data-lang="ro-RO">Română</button></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    const form = document.getElementById('versailles-quiz-form');
+    const resultsContainer = document.getElementById('quiz-results');
+
+    let quizLocked = false;
+
+    function getCheckedValues(name) {
+        return Array.from(form.querySelectorAll(`input[name="${name}"]:checked`)).map(i => i.value);
+    }
+
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+
+    function updateQuestionNumbers() {
+        form.querySelectorAll('fieldset').forEach((fieldset, index) => {
+            const legend = fieldset.querySelector('legend');
+            const text = legend.textContent.replace(/^\d+\.\s*/, '');
+            legend.textContent = `${index + 1}. ${text}`;
+        });
+    }
+
+    function shuffleQuizQuestions() {
+        const fieldsets = Array.from(form.querySelectorAll('fieldset'));
+        const buttons = Array.from(form.querySelectorAll('button'));
+        const shuffled = shuffleArray(fieldsets.slice());
+
+        shuffled.forEach(fieldset => form.insertBefore(fieldset, buttons[0]));
+
+        form.querySelectorAll('label').forEach(l => l.classList.add('quiz-label'));
+
+        updateQuestionNumbers();
+    }
+
+    function allQuestionsAnswered() {
+        const radios = Array.from(form.querySelectorAll('input[type="radio"]'));
+        const names = Array.from(new Set(radios.map(r => r.name))).filter(n => n);
+        return names.length > 0 && names.every(name => form.querySelector(`input[name="${name}"]:checked`) !== null);
+    }
+
+    function clearHighlights() {
+        form.querySelectorAll('label').forEach(l => {
+            l.classList.remove('correct', 'incorrect');
+        });
+    }
+
+    function lockQuiz() {
+        quizLocked = true;
+
+        form.querySelectorAll('input[type="radio"]').forEach(input => {
+            input.disabled = true;
+        });
+    }
+
+    function unlockQuiz() {
+        quizLocked = false;
+
+        form.querySelectorAll('input[type="radio"]').forEach(input => {
+            input.disabled = false;
+        });
+    }
+
+    shuffleQuizQuestions();
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        if (quizLocked) return;
+
+        if (!allQuestionsAnswered()) {
+            resultsContainer.innerHTML = `
+                <div class="quiz-score">
+                    <h2 style="color: var(--red);">
+                        Veuillez répondre à toutes les questions avant de vérifier.
+                    </h2>
+                </div>
+            `;
+            return;
+        }
+
+        clearHighlights();
+
+        const correctAnswers = {
+            q1: 'Louis XIV',
+            q2: 'RER C',
+            q3: 'Jardins Le Nôtre',
+            q4: 'Galerie des Glaces',
+            q5: 'Musée'
+        };
+
+        let score = 0;
+
+        const radioNames = Array.from(new Set(Array.from(form.querySelectorAll('input[type="radio"]')).map(r => r.name))).filter(n => n);
+
+        radioNames.forEach(name => {
+            const selected = form.querySelector(`input[name="${name}"]:checked`);
+            const selectedVal = selected ? selected.value : '';
+            const selectedLabel = selected ? selected.parentElement : null;
+
+            if (selectedVal === correctAnswers[name]) {
+                score += 20;
+
+                if (selectedLabel) {
+                    selectedLabel.classList.add('correct');
+                }
+
+            } else {
+                if (selectedLabel) {
+                    selectedLabel.classList.add('incorrect');
+                }
+            }
+        });
+
+        const percent = Math.round(score);
+        const questions = Math.round(percent / 20);
+
+        resultsContainer.innerHTML = `
+            <div class="quiz-score">
+                <h2 data-i18n="quiz_result">Résultat :</h2> <h2>${percent}%</h2>
+                <p data-i18n="quiz_questions">Vous avez répondu correctement à ${questions} questions sur 5.</p>
+            </div>
+        `;
+        translatePage();
+        lockQuiz();
+    });
+    form.addEventListener('reset', function () {
+
+        setTimeout(() => {
+            clearHighlights();
+            resultsContainer.innerHTML = '';
+            unlockQuiz();
+            shuffleQuizQuestions();
+
+        }, 0);
+    });    
+    </script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Disneyland | Paris-Édu</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/256/203/203026.png">
+    <link rel="stylesheet" href="../paris.css">
+    <script src="../paris.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="../accueil.html" class="logo">Paris-Édu</a>
+        <ul class="header-links">
+            <li><a href="../accueil.html" data-i18n="header_home">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn" data-i18n="header_destinations">Destinations</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../tour_eiffel.html" data-i18n="dropdown_tour_eiffel">Tour Eiffel</a></li>
+                    <li><a href="../musee_louvre.html" data-i18n="dropdown_musee_louvre">Musée du Louvre</a></li>
+                    <li><a href="../chateau_versailles.html" data-i18n="dropdown_chateau_versailles">Château de Versailles</a></li>
+                    <li><a href="../notre-dame.html" data-i18n="dropdown_notre_dame">Notre-Dame de Paris</a></li>
+                    <li><a href="../disneyland.html" data-i18n="dropdown_disneyland">Disneyland Paris</a></li>
+                </ul>
+            </li>
+            <li><a href="../questionnaires.html" data-i18n="header_questionnaires">Questionnaires</a></li>
+            <li><a href="../contact.html" data-i18n="header_contact">Contactez-nous</a></li>
+            <form class="header-search" role="search" onsubmit="return false;">
+                <input type="search"
+                       class="header-search-input"
+                       placeholder="🔍"
+                       data-i18n-placeholder="search_placeholder">
+            </form>
+        </ul>
+    </header>
+
+    <div class="page">
+        <div class="detail-page">
+            <button class="back-btn" onclick="window.location.href='../questionnaires.html'"><span data-i18n="retour2">← Retour aux questionnaires</span></button>
+            <div class="detail-header">
+                <h1>Quiz : Disneyland Paris</h1>
+            </div>
+
+            <div class="gallery">
+                <img src="https://parcdeparis.com/wp-content/uploads/2020/07/chateau-de-la-belle-au-bois-dormant-disneyland.jpg" alt="Château de la Belle au bois dormant">
+                <img src="https://media.disneylandparis.com/d4th/en-int/images/n014915_2027jul10_world_panoramique-pirates-of-the-caribbean_16-9_tcm787-162428.jpg" alt="Pirates des Caraïbes">
+                <img src="https://media.disneylandparis.com/d4th/en-usd/images/n018015_2050jan01_space-mountain_16-9_tcm1861-159759.jpg?w=240,%20https://media.disneylandparis.com/d4th/en-usd/images/n018015_2050jan01_space-mountain_16-9_tcm1861-159759.jpg?w=480%202x" alt="Star Wars">
+                <img src="https://www.julieears.com/wp-content/uploads/2023/03/Julie-Ears-Disneyland-Paris-Mickey-Mouse-scaled.jpg" alt="Rencontre avec Mickey">
+            </div>
+
+    <form id="disney-quiz-form" class="quiz-form">
+                <fieldset>
+                    <legend data-i18n="q6">1. Quand Disneyland Paris a-t-il ouvert ses portes ?</legend>
+                    <label data-i18n="q6_a1"><input type="radio" name="q6" value="1989"> 14 juillet 1989</label>
+                    <label data-i18n="q6_a2"><input type="radio" name="q6" value="2002"> 16 mars 2002</label>
+                    <label data-i18n="q6_a3"><input type="radio" name="q6" value="1992"> 12 avril 1992</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q7">2. Quel parc a été inauguré en 2002 ?</legend>
+                    <label data-i18n="q7_a1"><input type="radio" name="q7" value="Adventureland"> Adventureland Park</label>
+                    <label data-i18n="q7_a2"><input type="radio" name="q7" value="Walt Disney Studios"> Walt Disney Studios</label>
+                    <label data-i18n="q7_a3"><input type="radio" name="q7" value="Euro Village"> Euro Village</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q8">3. Quelle attraction atteint une vitesse de 80 km/h ?</legend>
+                    <label data-i18n="q8_a1"><input type="radio" name="q8" value="Big Thunder Mountain"> Big Thunder Mountain</label>
+                    <label data-i18n="q8_a2"><input type="radio" name="q8" value="Flight Force"> Avengers Assemble: Flight Force</label>
+                    <label data-i18n="q8_a3"><input type="radio" name="q8" value="Pirates"> Pirates des Caraïbes</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q9">4. Quel spectacle nocturne emblématique illumine le château de Disneyland Paris ?</legend>
+                    <label data-i18n="q9_a1"><input type="radio" name="q9" value="Illuminations"> Disney Illuminations</label>
+                    <label data-i18n="q9_a2"><input type="radio" name="q9" value="Magician"> Mickey and the Magician</label>
+                    <label data-i18n="q9_a3"><input type="radio" name="q9" value="Frozen"> Frozen: A Musical Invitation</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q10">5. Quelle attraction est un rollercoaster intérieur lié à Star Wars ?</legend>
+                    <label data-i18n="q10_a1"><input type="radio" name="q10" value="Hyperspace"> Star Wars Hyperspace Mountain</label>
+                    <label data-i18n="q10_a2"><input type="radio" name="q10" value="Ratatouille"> Ratatouille</label>
+                    <label data-i18n="q10_a3"><input type="radio" name="q10" value="Crush"> Crush’s Coaster</label>
+                </fieldset>
+
+                <button type="submit"><span data-i18n="quiz_submit">Vérifier mes réponses</span></button>
+                <button type="reset"><span data-i18n="quiz_reset">Réinitialiser</span></button>
+</form>
+
+<div id="quiz-results" class="quiz-results"></div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-left">
+            <p data-i18n="footer_notice">© 2026  | Tous droits réservés</p>
+            <div class="footer-links">
+                <a href="privacy.html" data-i18n="footer_privacy">Confidentialité</a>
+                <a href="terms.html" data-i18n="footer_terms">Conditions d'Utilisation</a>
+                <a href="https://forms.gle/p7tvY1pFosFmPXE57" data-i18n="footer_survey" target="_blank">Questionnaire de satisfaction</a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="accessibility-dropdown">
+                <button class="accessibility-btn"><span data-i18n="accessibility_btn">Accessibilité</span></button>
+                <ul class="accessibility-menu">
+                    <li><button id="toggle-high-contrast"><span data-i18n="accessibility_contrast">Contraste élevé</span></button></li>
+                    <li><button id="toggle-large-text"><span data-i18n="accessibility_text">Texte plus grand</span></button></li>
+                    <li><button id="toggle-dyslexia-font"><span data-i18n="accessibility_dyslexia">Police dyslexie</span></button></li>
+                    <li><button id="reset-accessibility"><span data-i18n="accessibility_reset">Réinitialiser</span></button></li>
+                </ul>
+            </div>
+            <div class="lang-dropdown">
+                <button class="lang-btn"><span data-i18n="lang_btn">Langue</span></button>
+                <ul class="lang-menu">
+                    <li><button data-lang="fr-FR">Français</button></li>
+                    <li><button data-lang="en-US">English</button></li>
+                    <li><button data-lang="ro-RO">Română</button></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+<script>
+    const form = document.getElementById('disney-quiz-form');
+    const resultsContainer = document.getElementById('quiz-results');
+
+    let quizLocked = false;
+
+    function getCheckedValues(name) {
+        return Array.from(form.querySelectorAll(`input[name="${name}"]:checked`)).map(i => i.value);
+    }
+
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+
+    function updateQuestionNumbers() {
+        form.querySelectorAll('fieldset').forEach((fieldset, index) => {
+            const legend = fieldset.querySelector('legend');
+            const text = legend.textContent.replace(/^\d+\.\s*/, '');
+            legend.textContent = `${index + 1}. ${text}`;
+        });
+    }
+
+    function shuffleQuizQuestions() {
+        const fieldsets = Array.from(form.querySelectorAll('fieldset'));
+        const buttons = Array.from(form.querySelectorAll('button'));
+        const shuffled = shuffleArray(fieldsets.slice());
+
+        shuffled.forEach(fieldset => form.insertBefore(fieldset, buttons[0]));
+
+        form.querySelectorAll('label').forEach(l => l.classList.add('quiz-label'));
+
+        updateQuestionNumbers();
+    }
+
+    function allQuestionsAnswered() {
+        const radios = Array.from(form.querySelectorAll('input[type="radio"]'));
+        const names = Array.from(new Set(radios.map(r => r.name))).filter(n => n);
+        return names.length > 0 && names.every(name => form.querySelector(`input[name="${name}"]:checked`) !== null);
+    }
+
+    function clearHighlights() {
+        form.querySelectorAll('label').forEach(l => {
+            l.classList.remove('correct', 'incorrect');
+        });
+    }
+
+    function lockQuiz() {
+        quizLocked = true;
+
+        form.querySelectorAll('input[type="radio"]').forEach(input => {
+            input.disabled = true;
+        });
+    }
+
+    function unlockQuiz() {
+        quizLocked = false;
+
+        form.querySelectorAll('input[type="radio"]').forEach(input => {
+            input.disabled = false;
+        });
+    }
+
+    shuffleQuizQuestions();
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        if (quizLocked) return;
+
+        if (!allQuestionsAnswered()) {
+            resultsContainer.innerHTML = `
+                <div class="quiz-score">
+                    <h2 style="color: var(--red);">
+                        Veuillez répondre à toutes les questions avant de vérifier.
+                    </h2>
+                </div>
+            `;
+            return;
+        }
+
+        clearHighlights();
+
+        const correctAnswers = {
+            q6: '1992',
+            q7: 'Walt Disney Studios',
+            q8: 'Flight Force',
+            q9: 'Illuminations',
+            q10: 'Hyperspace'
+        };
+
+        let score = 0;
+
+        const radioNames = Array.from(new Set(Array.from(form.querySelectorAll('input[type="radio"]')).map(r => r.name))).filter(n => n);
+
+        radioNames.forEach(name => {
+            const selected = form.querySelector(`input[name="${name}"]:checked`);
+            const selectedVal = selected ? selected.value : '';
+            const selectedLabel = selected ? selected.parentElement : null;
+
+            if (selectedVal === correctAnswers[name]) {
+                score += 20;
+
+                if (selectedLabel) {
+                    selectedLabel.classList.add('correct');
+                }
+
+            } else {
+                if (selectedLabel) {
+                    selectedLabel.classList.add('incorrect');
+                }
+            }
+        });
+
+        const percent = Math.round(score);
+        const questions = Math.round(percent / 20);
+
+        resultsContainer.innerHTML = `
+            <div class="quiz-score">
+                <h2 data-i18n="quiz_result">Résultat : ${percent}%</h2>
+                <p data-i18n="quiz_questions">Vous avez répondu correctement à ${questions} questions sur 5.</p>
+            </div>
+        `;
+        translatePage();
+        lockQuiz();
+    });
+    form.addEventListener('reset', function () {
+
+        setTimeout(() => {
+            clearHighlights();
+            resultsContainer.innerHTML = '';
+            unlockQuiz();
+            shuffleQuizQuestions();
+
+        }, 0);
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Destinations | Paris-Édu</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/256/203/203026.png">
+    <link rel="stylesheet" href="../paris.css">
+    <script src="../paris.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="../accueil.html" class="logo">Paris-Édu</a>
+        <ul class="header-links">
+            <li><a href="../accueil.html" data-i18n="header_home">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn" data-i18n="header_destinations">Destinations</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../tour_eiffel.html" data-i18n="dropdown_tour_eiffel">Tour Eiffel</a></li>
+                    <li><a href="../musee_louvre.html" data-i18n="dropdown_musee_louvre">Musée du Louvre</a></li>
+                    <li><a href="../chateau_versailles.html" data-i18n="dropdown_chateau_versailles">Château de Versailles</a></li>
+                    <li><a href="../notre-dame.html" data-i18n="dropdown_notre_dame">Notre-Dame de Paris</a></li>
+                    <li><a href="../disneyland.html" data-i18n="dropdown_disneyland">Disneyland Paris</a></li>
+                </ul>
+            </li>
+            <li><a href="../questionnaires.html" data-i18n="header_questionnaires">Questionnaires</a></li>
+            <li><a href="../contact.html" data-i18n="header_contact">Contactez-nous</a></li>
+            <form class="header-search" role="search" onsubmit="return false;">
+                <input type="search"
+                       class="header-search-input"
+                       placeholder="🔍"
+                       data-i18n-placeholder="search_placeholder">
+            </form>
+        </ul>
+    </header>
+
+    <div class="page">
+        <div class="detail-page">
+            <button class="back-btn" onclick="window.location.href='../questionnaires.html'"><span data-i18n="retour2">← Retour aux questionnaires</span></button>
+            <div class="detail-header">
+                <h1>Quiz : Destinations à Paris</h1>
+                <p>Bonne chance !</p>
+            </div>
+
+            <form id="destinations-quiz-form" class="quiz-form">
+                <fieldset>
+                    <legend data-i18n="q1">1. Quel roi a transformé le château de Versailles en résidence royale majeure ?</legend>
+                    <label><input type="radio" name="q1" value="Napoléon"><span data-i18n="q1_a1">Napoléon</span></label>
+                    <label data-i18n="q1_a2"><input type="radio" name="q1" value="Louis XIII"><span data-i18n="q1_a2">Louis XIII</span></label>
+                    <label data-i18n="q1_a3"><input type="radio" name="q1" value="Louis XIV"><span data-i18n="q1_a3">Louis XIV</span></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q2">2. Quel service de train mène directement à Versailles Château - Rive Gauche ?</legend>
+                    <label data-i18n="q2_a1"><input type="radio" name="q2" value="RER C"> RER C</label>
+                    <label data-i18n="q2_a2"><input type="radio" name="q2" value="Métro 1"> Métro 1</label>
+                    <label data-i18n="q2_a3"><input type="radio" name="q2" value="RER A"> RER A</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q3">3. Quel élément est bien lié aux jardins de Versailles ?</legend>
+                    <label data-i18n="q3_a1"><input type="radio" name="q3" value="Jardins Le Nôtre"> Jardins Le Nôtre</label>
+                    <label data-i18n="q3_a2"><input type="radio" name="q3" value="Parc Disneyland"> Parc Disneyland</label>
+                    <label data-i18n="q3_a3"><input type="radio" name="q3" value="Île de la Cité"> Île de la Cité</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q4">4. Lequel de ces lieux est mentionné comme une visite possible à Versailles ?</legend>
+                    <label data-i18n="q4_a1"><input type="radio" name="q4" value="Salle du Trône"> Salle du Trône</label>
+                    <label data-i18n="q4_a2"><input type="radio" name="q4" value="Galerie des Glaces"> Galerie des Glaces</label>
+                    <label data-i18n="q4_a3"><input type="radio" name="q4" value="Tour Eiffel"> Tour Eiffel</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q5">5. En 1796, le Château de Versailles est converti en :</legend>
+                    <label data-i18n="q5_a1"><input type="radio" name="q5" value="Musée"> Musée</label>
+                    <label data-i18n="q5_a2"><input type="radio" name="q5" value="Bibliothèque"> Bibliothèque</label>
+                    <label data-i18n="q5_a3"><input type="radio" name="q5" value="Hôtel"> Hôtel</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q6">6. Quand Disneyland Paris a-t-il ouvert ses portes ?</legend>
+                    <label data-i18n="q6_a1"><input type="radio" name="q6" value="1989"> 14 juillet 1989</label>
+                    <label data-i18n="q6_a2"><input type="radio" name="q6" value="2002"> 16 mars 2002</label>
+                    <label data-i18n="q6_a3"><input type="radio" name="q6" value="1992"> 12 avril 1992</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q7">7. Quel parc a été inauguré en 2002 ?</legend>
+                    <label data-i18n="q7_a1"><input type="radio" name="q7" value="Adventureland"> Adventureland Park</label>
+                    <label data-i18n="q7_a2"><input type="radio" name="q7" value="Walt Disney Studios"> Walt Disney Studios</label>
+                    <label data-i18n="q7_a3"><input type="radio" name="q7" value="Euro Village"> Euro Village</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q8">8. Quelle attraction atteint une vitesse de 80 km/h ?</legend>
+                    <label data-i18n="q8_a1"><input type="radio" name="q8" value="Big Thunder Mountain"> Big Thunder Mountain</label>
+                    <label data-i18n="q8_a2"><input type="radio" name="q8" value="Flight Force"> Avengers Assemble: Flight Force</label>
+                    <label data-i18n="q8_a3"><input type="radio" name="q8" value="Pirates"> Pirates des Caraïbes</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q9">9. Quel spectacle nocturne emblématique illumine le château de Disneyland Paris ?</legend>
+                    <label data-i18n="q9_a1"><input type="radio" name="q9" value="Illuminations"> Disney Illuminations</label>
+                    <label data-i18n="q9_a2"><input type="radio" name="q9" value="Magician"> Mickey and the Magician</label>
+                    <label data-i18n="q9_a3"><input type="radio" name="q9" value="Frozen"> Frozen: A Musical Invitation</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q10">10. Quelle attraction est un rollercoaster intérieur lié à Star Wars ?</legend>
+                    <label data-i18n="q10_a1"><input type="radio" name="q10" value="Hyperspace"> Star Wars Hyperspace Mountain</label>
+                    <label data-i18n="q10_a2"><input type="radio" name="q10" value="Ratatouille"> Ratatouille</label>
+                    <label data-i18n="q10_a3"><input type="radio" name="q10" value="Crush"> Crush’s Coaster</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q11">11. En quelle année le musée du Louvre a-t-il officiellement ouvert ses portes ?</legend>
+                    <label data-i18n="q11_a1"><input type="radio" name="q11" value="1546"> 1546</label>
+                    <label data-i18n="q11_a2"><input type="radio" name="q11" value="1678"> 1678</label>
+                    <label data-i18n="q11_a3"><input type="radio" name="q11" value="1793"> 1793</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q12">12. Quel roi a commencé la transformation du Louvre en palais de la Renaissance ?</legend>
+                    <label data-i18n="q12_a1"><input type="radio" name="q12" value="Louis XIV"> Louis XIV</label>
+                    <label data-i18n="q12_a2"><input type="radio" name="q12" value="François Ier"> François Ier</label>
+                    <label data-i18n="q12_a3"><input type="radio" name="q12" value="Napoléon Ier"> Napoléon Ier</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q13">13. Quelle sculpture grecque a été découverte en 1820 sur l’île de Milos ?</legend>
+                    <label data-i18n="q13_a1"><input type="radio" name="q13" value="Victoire de Samothrace"> Victoire de Samothrace</label>
+                    <label data-i18n="q13_a2"><input type="radio" name="q13" value="Aphrodite de Rhodes"> Aphrodite de Rhodes</label>
+                    <label data-i18n="q13_a3"><input type="radio" name="q13" value="Vénus de Milo"> Vénus de Milo</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q14">14. Laquelle des affirmations suivantes concernant les œuvres exposées au Louvre est correcte ?</legend>
+                    <label data-i18n="q14_a1"><input type="radio" name="q14" value="Code de Hammurabi"> Le Code de Hammurabi fait partie des pièces exposées</label>
+                    <label data-i18n="q14_a2"><input type="radio" name="q14" value="Art français uniquement"> Le musée expose uniquement de l’art français</label>
+                    <label data-i18n="q14_a3"><input type="radio" name="q14" value="Richelieu uniquement"> Les peintures sont exposées exclusivement dans l’aile Richelieu</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q15">15. Qui a conçu la pyramide de verre inaugurée en 1989 ?</legend>
+                    <label data-i18n="q15_a1"><input type="radio" name="q15" value="Le Corbusier"> Le Corbusier</label>
+                    <label data-i18n="q15_a2"><input type="radio" name="q15" value="I. M. Pei"> I. M. Pei</label>
+                    <label data-i18n="q15_a3"><input type="radio" name="q15" value="Haussmann"> Haussmann</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q16">16. Quand la construction de Notre-Dame de Paris a-t-elle commencé ?</legend>
+                    <label data-i18n="q16_a1"><input type="radio" name="q16" value="1204"> 1204</label>
+                    <label data-i18n="q16_a2"><input type="radio" name="q16" value="1163"> 1163</label>
+                    <label data-i18n="q16_a3"><input type="radio" name="q16" value="1345"> 1345</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q17">17. Quel événement majeur a touché la cathédrale le 15 avril 2019 ?</legend>
+                    <label data-i18n="q17_a1"><input type="radio" name="q17" value="Inondation"> Une inondation</label>
+                    <label data-i18n="q17_a2"><input type="radio" name="q17" value="Incendie"> Un incendie dévastateur</label>
+                    <label data-i18n="q17_a3"><input type="radio" name="q17" value="Effondrement"> Un effondrement de la façade</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q18">18. Qui supervise actuellement les activités liturgiques de Notre-Dame ?</legend>
+                    <label data-i18n="q18_a1"><input type="radio" name="q18" value="Philippe Villeneuve"> Philippe Villeneuve</label>
+                    <label data-i18n="q18_a2"><input type="radio" name="q18" value="Emmanuel Macron"> Emmanuel Macron</label>
+                    <label data-i18n="q18_a3"><input type="radio" name="q18" value="Olivier Ribadeau Dumas"> Olivier Ribadeau Dumas</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q19">19. Quelle cloche emblématique de Notre-Dame pèse 13 tonnes ?</legend>
+                    <label data-i18n="q19_a1"><input type="radio" name="q19" value="Marie"> Marie</label>
+                    <label data-i18n="q19_a2"><input type="radio" name="q19" value="Emmanuel"> Emmanuel</label>
+                    <label data-i18n="q19_a3"><input type="radio" name="q19" value="Gabriel"> Gabriel</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q20">20. Quelle station de métro permet d’accéder directement à Notre-Dame ?</legend>
+                    <label data-i18n="q20_a1"><input type="radio" name="q20" value="Cité"> Cité (ligne 4)</label>
+                    <label data-i18n="q20_a2"><input type="radio" name="q20" value="Bastille"> Bastille (ligne 1)</label>
+                    <label data-i18n="q20_a3"><input type="radio" name="q20" value="Odéon"> Odéon (ligne 4)</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q21">21. En quelle année la Tour Eiffel a-t-elle été inaugurée ?</legend>
+                    <label data-i18n="q21_a1"><input type="radio" name="q21" value="1900">1900</label>
+                    <label data-i18n="q21_a2"><input type="radio" name="q21" value="1889">1889</label>
+                    <label data-i18n="q21_a3"><input type="radio" name="q21" value="1875">1875</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q22">22. Qui a construit la Tour Eiffel ?</legend>
+                    <label data-i18n="q22_a1"><input type="radio" name="q22" value="Haussmann"> Haussmann</label>
+                    <label data-i18n="q22_a2"><input type="radio" name="q22" value="Le Corbusier"> Le Corbusier</label>
+                    <label data-i18n="q22_a3"><input type="radio" name="q22" value="Gustave Eiffel"> Gustave Eiffel</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q23">23. Quelle station de métro est la plus proche de la Tour Eiffel ?</legend>
+                    <label data-i18n="q23_a1"><input type="radio" name="q23" value="Châtelet"> Châtelet</label>
+                    <label data-i18n="q23_a2"><input type="radio" name="q23" value="Bir-Hakeim"> Bir-Hakeim</label>
+                    <label data-i18n="q23_a3"><input type="radio" name="q23" value="Concorde"> Concorde</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q24">24. Quel fait scientifique est associé à la Tour Eiffel ?</legend>
+                    <label data-i18n="q24_a1"><input type="radio" name="q24" value="Expérimentations TSF"> Les premières expérimentations de TSF</label>
+                    <label data-i18n="q24_a2"><input type="radio" name="q24" value="Centre spatial"> Elle servait de centre spatial</label>
+                    <label data-i18n="q24_a3"><input type="radio" name="q24" value="Observatoire marin"> Elle servait d’observatoire marin</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="q25">25. Combien d’ampoules illuminent la Tour Eiffel ?</legend>
+                    <label data-i18n="q25_a1"><input type="radio" name="q25" value="5000"> 5 000</label>
+                    <label data-i18n="q25_a2"><input type="radio" name="q25" value="20000"> 20 000</label>
+                    <label data-i18n="q25_a3"><input type="radio" name="q25" value="100000"> 100 000</label>
+                </fieldset>
+
+                <button type="submit"><span data-i18n="quiz_submit">Vérifier mes réponses</span></button>
+                <button type="reset"><span data-i18n="quiz_reset">Réinitialiser</span></button>
+    </form>
+
+            <div id="quiz-results" class="quiz-results"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-left">
+            <p data-i18n="footer_notice">© 2026  | Tous droits réservés</p>
+            <div class="footer-links">
+                <a href="privacy.html" data-i18n="footer_privacy">Confidentialité</a>
+                <a href="terms.html" data-i18n="footer_terms">Conditions d'Utilisation</a>
+                <a href="https://forms.gle/p7tvY1pFosFmPXE57" data-i18n="footer_survey" target="_blank">Questionnaire de satisfaction</a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="accessibility-dropdown">
+                <button class="accessibility-btn"><span data-i18n="accessibility_btn">Accessibilité</span></button>
+                <ul class="accessibility-menu">
+                    <li><button id="toggle-high-contrast"><span data-i18n="accessibility_contrast">Contraste élevé</span></button></li>
+                    <li><button id="toggle-large-text"><span data-i18n="accessibility_text">Texte plus grand</span></button></li>
+                    <li><button id="toggle-dyslexia-font"><span data-i18n="accessibility_dyslexia">Police dyslexie</span></button></li>
+                    <li><button id="reset-accessibility"><span data-i18n="accessibility_reset">Réinitialiser</span></button></li>
+                </ul>
+            </div>
+            <div class="lang-dropdown">
+                <button class="lang-btn"><span data-i18n="lang_btn">Langue</span></button>
+                <ul class="lang-menu">
+                    <li><button data-lang="fr-FR">Français</button></li>
+                    <li><button data-lang="en-US">English</button></li>
+                    <li><button data-lang="ro-RO">Română</button></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    const form = document.getElementById('destinations-quiz-form');
+    const resultsContainer = document.getElementById('quiz-results');
+
+    let quizLocked = false;
+
+    function getCheckedValues(name) {
+        return Array.from(form.querySelectorAll(`input[name="${name}"]:checked`)).map(i => i.value);
+    }
+
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+
+    function updateQuestionNumbers() {
+        form.querySelectorAll('fieldset').forEach((fieldset, index) => {
+            const legend = fieldset.querySelector('legend');
+            const text = legend.textContent.replace(/^\d+\.\s*/, '');
+            legend.textContent = `${index + 1}. ${text}`;
+        });
+    }
+
+    function shuffleQuizQuestions() {
+        const fieldsets = Array.from(form.querySelectorAll('fieldset'));
+        const buttons = Array.from(form.querySelectorAll('button'));
+        const shuffled = shuffleArray(fieldsets.slice());
+
+        shuffled.forEach(fieldset => form.insertBefore(fieldset, buttons[0]));
+
+        form.querySelectorAll('label').forEach(l => l.classList.add('quiz-label'));
+
+        updateQuestionNumbers();
+    }
+
+    function allQuestionsAnswered() {
+        const radios = Array.from(form.querySelectorAll('input[type="radio"]'));
+        const names = Array.from(new Set(radios.map(r => r.name))).filter(n => n);
+        return names.length > 0 && names.every(name => form.querySelector(`input[name="${name}"]:checked`) !== null);
+    }
+
+    function clearHighlights() {
+        form.querySelectorAll('label').forEach(l => {
+            l.classList.remove('correct', 'incorrect');
+        });
+    }
+
+    function lockQuiz() {
+        quizLocked = true;
+
+        form.querySelectorAll('input[type="radio"]').forEach(input => {
+            input.disabled = true;
+        });
+    }
+
+    function unlockQuiz() {
+        quizLocked = false;
+
+        form.querySelectorAll('input[type="radio"]').forEach(input => {
+            input.disabled = false;
+        });
+    }
+
+    shuffleQuizQuestions();
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        if (quizLocked) return;
+
+        if (!allQuestionsAnswered()) {
+            resultsContainer.innerHTML = `
+                <div class="quiz-score">
+                    <h2 style="color: var(--red);">
+                        Veuillez répondre à toutes les questions avant de vérifier.
+                    </h2>
+                </div>
+            `;
+            return;
+        }
+
+        clearHighlights();
+
+        const correctAnswers = {
+            q1: 'Louis XIV',
+            q2: 'RER C',
+            q3: 'Jardins Le Nôtre',
+            q4: 'Galerie des Glaces',
+            q5: 'Musée',
+            q6: '1992',
+            q7: 'Walt Disney Studios',
+            q8: 'Flight Force',
+            q9: 'Illuminations',
+            q10: 'Hyperspace',
+            q11: '1793',
+            q12: 'François Ier',
+            q13: 'Vénus de Milo',
+            q14: 'Code de Hammurabi',
+            q15: 'I. M. Pei',
+            q16: '1163',
+            q17: 'Incendie',
+            q18: 'Olivier Ribadeau Dumas',
+            q19: 'Emmanuel',
+            q20: 'Cité',
+            q21: '1889',
+            q22: 'Gustave Eiffel',
+            q23: 'Bir-Hakeim',
+            q24: 'Expérimentations TSF',
+            q25: '20000'
+        };
+
+        let score = 0;
+
+        const radioNames = Array.from(new Set(Array.from(form.querySelectorAll('input[type="radio"]')).map(r => r.name))).filter(n => n);
+
+        radioNames.forEach(name => {
+            const selected = form.querySelector(`input[name="${name}"]:checked`);
+            const selectedVal = selected ? selected.value : '';
+            const selectedLabel = selected ? selected.parentElement : null;
+
+            if (selectedVal === correctAnswers[name]) {
+                score += 4;
+
+                if (selectedLabel) {
+                    selectedLabel.classList.add('correct');
+                }
+
+            } else {
+                if (selectedLabel) {
+                    selectedLabel.classList.add('incorrect');
+                }
+            }
+        });
+
+        const percent = Math.round(score);
+        const questions = Math.round(percent / 4);
+
+        resultsContainer.innerHTML = `
+            <div class="quiz-score">
+                <h2 data-i18n="quiz_result">Résultat : ${percent}%</h2>
+                <p data-i18n="quiz_questions">Vous avez répondu correctement à ${questions} questions sur 25.</p>
+            </div>
+        `;
+        translatePage();
+        lockQuiz();
+    });
+    form.addEventListener('reset', function () {
+
+        setTimeout(() => {
+            clearHighlights();
+            resultsContainer.innerHTML = '';
+            unlockQuiz();
+            shuffleQuizQuestions();
+
+        }, 0);
+    });    
+    </script>
+</body>
+</html>
