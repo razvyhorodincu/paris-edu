@@ -5,10 +5,10 @@ Paris-Édu vine în ajutorul călătorilor și nu numai. Platforma este conceput
 Site-ul oferă o experiență interactivă și educațională, combinând informația turistică cu învățarea limbii franceze într-un mod natural și accesibil.
 
 Funcționalități principale:
-Traduceri în 3 limbi (franceză, engleză și română), ceea ce permite accesibilitate și înțelegere pentru un public internațional.
+Traduceri în 3 limbi (franceză, engleză și română), ceea ce permite accesibilitate și înțelegere.
 Quiz-uri și chestionare pentru testarea cunoștințelor acumulate, ajutând utilizatorii să învețe activ.
 Informații sintetizate și curiozități despre cele mai importante obiective turistice din Paris, prezentate într-un mod clar și ușor de reținut.
-Hărți interactive și tururi virtuale imersive pentru cunoașterea în detaliu a obiectivelor
+Hărți interactive și tururi virtuale imersive pentru cunoașterea în detaliu a obiectivelor.
 
 Tehnologii folosite
 Front-end: HTML, CSS, JavaScript
