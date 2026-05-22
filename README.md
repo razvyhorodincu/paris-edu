@@ -22,4 +22,4 @@ Telefon/tabletă (Android 10/iOS 15 sau versiuni mai noi)
 Acces la internet sau rețea mobilă 4G+/5G
 
 Surse de informare și de obținere a imaginilor
-architecturaldigest.com, hotel-roys-versailles.com, chateauversailles.fr, lea.lighting, icons-png.flaticon.com, www.batobus.com, www.unjourdeplusaparis.com, www.parisselectbook.com, wikimedia.org, parcdeparis.com, disneylandparis.com, julieears.com, static.europe1.fr, www.marble-sculpture.com, static.vitrine.ynov.com, www.friendsofnotredamedeparis.org, euronews.com, wixstatic.com, freepik.com, unjourdeplusaparis.com, shopify.com, laterreestunjardin.com, generationvoyage.fr
+architecturaldigest.com, hotel-roys-versailles.com, chateauversailles.fr, lea.lighting, icons-png.flaticon.com, batobus.com, unjourdeplusaparis.com, parisselectbook.com, wikimedia.org, parcdeparis.com, disneylandparis.com, julieears.com, static.europe1.fr, marble-sculpture.com, static.vitrine.ynov.com, friendsofnotredamedeparis.org, euronews.com, wixstatic.com, freepik.com, unjourdeplusaparis.com, shopify.com, laterreestunjardin.com, generationvoyage.fr
