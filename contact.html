@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous | Paris-Édu</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/256/203/203026.png">
+    <link rel="stylesheet" href="paris.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase.js" defer></script>
+    <script src="contact.js" defer></script>
+    <script src="paris.js" defer></script>
+    <style>
+        .contact-page {
+            min-height: auto;
+            padding-top: 75px;
+            padding-bottom: 32px;
+        }
+
+        #contact {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+            padding: 24px 16px 16px;
+        }
+
+        .contact-panel {
+            width: 100%;
+            max-width: 760px;
+        }
+
+        .contact-form {
+            width: 100%;
+            max-width: 760px;
+            margin: 0 auto;
+            
+        }
+
+        .contact-actions {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-top: 16px;
+        }
+
+
+        .contact-actions .contact-btn:hover {
+            opacity: 0.9;
+        }
+
+        .button-c {
+            background: var(--red);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .button-c:hover {
+            background: #a00;
+        }
+        .button-c:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="accueil.html" class="logo">Paris-Édu</a>
+        <ul class="header-links">
+            <li><a href="accueil.html" data-i18n="header_home">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn" data-i18n="header_destinations">Destinations</a>
+                <ul class="dropdown-menu">
+                    <li><a href="tour_eiffel.html" data-i18n="dropdown_tour_eiffel">Tour Eiffel</a></li>
+                    <li><a href="musee_louvre.html" data-i18n="dropdown_musee_louvre">Musée du Louvre</a></li>
+                    <li><a href="chateau_versailles.html" data-i18n="dropdown_chateau_versailles">Château de Versailles</a></li>
+                    <li><a href="notre-dame.html" data-i18n="dropdown_notre_dame">Notre-Dame de Paris</a></li>
+                    <li><a href="disneyland.html" data-i18n="dropdown_disneyland">Disneyland Paris</a></li>
+                </ul>
+            </li>
+            <li><a href="questionnaires.html" data-i18n="header_questionnaires">Questionnaires</a></li>
+            <li><a href="contact.html" data-i18n="header_contact">Contactez-nous</a></li>
+            <form class="header-search" role="search" onsubmit="return false;">
+                <input type="search"
+                       class="header-search-input"
+                       placeholder="🔍"
+                       data-i18n-placeholder="search_placeholder">
+            </form>
+        </ul>
+    </header>
+
+    <div class="page contact-page">
+        <div class="detail-page">
+                <button class="back-btn" onclick="window.location.href='accueil.html'"><span data-i18n="retour">← Retour à l'accueil</span></button>
+
+            
+            <div class="detail-header">
+                <h1 data-i18n="header_contact">Contactez-nous</h1>
+                <p data-i18n="contact_info">Avez-vous besoin d’aide concernant les fonctionnalités du site ? Pensez-vous que quelque chose est inexact ou ne devrait pas figurer ici pour des raisons de droits d’auteur ? Souhaitez-vous suggérer de nouvelles fonctionnalités ? Contactez-nous via le formulaire ci-dessous, par e-mail ou rejoignez notre communauté pour discuter avec d’autres utilisateurs.</p>
+            </div>
+    
+    <div id="contact">
+        <div class="contact-panel">
+            <form class="contact-form" id="contact-form">
+                <label for="contact-name"><strong data-i18n="review_name">Nom</strong></label> <strong style="color:red"> *</strong>
+                <input type="text" id="contact-name" class="reviewer-name" required>
+                <label for="contact-email"><strong data-i18n="contact_email">Email</strong></label> <strong style="color:red"> *</strong>
+                <input type="email" id="contact-email" class="contact-email" required>
+                <label for="contact-message"><strong data-i18n="contact_message">Message</strong></label> <strong style="color:red"> *</strong>
+                <textarea id="contact-message" class="contact-message" rows="4" required></textarea> 
+                <button type="submit"><strong data-i18n="contact_submit" class="button-c">Envoyer</strong></button>
+            </form>
+        
+            <div class="contact-actions">
+                <button type="button" class="button-c" onclick="window.location.href='mailto:paris.edu.tourisme@gmail.com'"><span data-i18n="email">Envoyez-nous un email</span></button>
+                <button type="button" class="button-c" onclick="window.location.href='https://discord.gg/rE59mfVW8'"><img src="discord.png" width="16px" height="16px"><span data-i18n="discord">Rejoignez le Discord Paris-Édu</span></button>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-left">
+            <p data-i18n="footer_notice">© 2026  | Tous droits réservés</p>
+            <div class="footer-links">
+                <a href="privacy.html" data-i18n="footer_privacy">Confidentialité</a>
+                <a href="terms.html" data-i18n="footer_terms">Conditions d'Utilisation</a>
+                <a href="https://forms.gle/p7tvY1pFosFmPXE57" data-i18n="footer_survey" target="_blank">Questionnaire de satisfaction</a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="accessibility-dropdown">
+                <button class="accessibility-btn"><span data-i18n="accessibility_btn">Accessibilité</span></button>
+                <ul class="accessibility-menu">
+                    <li><button id="toggle-high-contrast"><span data-i18n="accessibility_contrast">Contraste élevé</span></button></li>
+                    <li><button id="toggle-large-text"><span data-i18n="accessibility_text">Texte plus grand</span></button></li>
+                    <li><button id="toggle-dyslexia-font"><span data-i18n="accessibility_dyslexia">Police dyslexie</span></button></li>
+                    <li><button id="reset-accessibility"><span data-i18n="accessibility_reset">Réinitialiser</span></button></li>
+                </ul>
+            </div>
+            <div class="lang-dropdown">
+                <button class="lang-btn"><span data-i18n="lang_btn">Langue</span></button>
+                <ul class="lang-menu">
+                    <li><button data-lang="fr-FR">Français</button></li>
+                    <li><button data-lang="en-US">English</button></li>
+                    <li><button data-lang="ro-RO">Română</button></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

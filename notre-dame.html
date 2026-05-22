@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre-Dame | Paris-Édu</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/256/203/203026.png">
+    <link rel="stylesheet" href="paris.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase.js" defer></script>
+    <script src="paris.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="accueil.html" class="logo">Paris-Édu</a>
+        <ul class="header-links">
+            <li><a href="accueil.html" data-i18n="header_home">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn" data-i18n="header_destinations">Destinations</a>
+                <ul class="dropdown-menu">
+                    <li><a href="tour_eiffel.html" data-i18n="dropdown_tour_eiffel">Tour Eiffel</a></li>
+                    <li><a href="musee_louvre.html" data-i18n="dropdown_musee_louvre">Musée du Louvre</a></li>
+                    <li><a href="chateau_versailles.html" data-i18n="dropdown_chateau_versailles">Château de Versailles</a></li>
+                    <li><a href="notre-dame.html" data-i18n="dropdown_notre_dame">Notre-Dame de Paris</a></li>
+                    <li><a href="disneyland.html" data-i18n="dropdown_disneyland">Disneyland Paris</a></li>
+                </ul>
+            </li>
+            <li><a href="questionnaires.html" data-i18n="header_questionnaires">Questionnaires</a></li>
+            <li><a href="contact.html" data-i18n="header_contact">Contactez-nous</a></li>
+            <form class="header-search" role="search" onsubmit="return false;">
+                <input type="search"
+                       class="header-search-input"
+                       placeholder="🔍"
+                       data-i18n-placeholder="search_placeholder">
+            </form>
+        </ul>
+    </header>
+
+    <div id="notredame" class="page">
+        <div class="detail-page">
+            <button class="back-btn" onclick="window.location.href='accueil.html'"><span data-i18n="retour">← Retour à l'accueil</span></button>
+
+            
+            <div class="detail-header">
+                <h1>Notre-Dame de Paris</h1>
+            </div>
+
+            <div class="gallery">
+                <img src="https://www.friendsofnotredamedeparis.org/wp-content/uploads/2021/10/5-Additional-Ways-to-Support-Friends-of-Notre-Dame-de-Paris.jpeg" alt="Notre-Dame façade">
+                <img src="https://images.euronews.com/articles/stories/08/88/14/24/1536x864_cmsv2_56c2178f-884c-50c0-81b6-188322a7261b-8881424.jpg" alt="Intérieur après réouverture">
+                <img src="https://static.wixstatic.com/media/6b15df_b641fc85275644649e9d2ec51dd423ca~mv2.png/v1/fill/w_1000,h_998,al_c,q_90,usm_0.66_1.00_0.01/6b15df_b641fc85275644649e9d2ec51dd423ca~mv2.png" alt="Rosace">
+                <img src="https://img.freepik.com/photos-premium/vue-aerienne-cathedrale-notre-dame-paris_249973-547.jpg" alt="Vue aérienne">
+            </div>
+
+            <div class="tour-card">
+                <div class="fact">
+                    <h2 data-i18n="histoire">Histoire</h2>
+                    <p data-i18n="histoire_nd"></p>
+                </div>
+                <div class="fact">
+                    <h2 data-i18n="recteur">Recteur et choses intéressantes</h2>
+                    <p data-i18n="ord">
+                    <ul>
+                        <li data-i18n="cloche_emmanuel"></li>
+                        <li data-i18n="tresor"></li>
+                        <li data-i18n="couronne_epines"></li>
+                        <li data-i18n="gargouilles"></li>
+                    </ul>
+                </div>
+                <div class="fact">
+                    <h2 data-i18n="infos_pratiques">Infos pratiques</h2>
+                    <p data-i18n="nd_info"></p>
+                </div>
+
+                <div class="fact">
+                    <h2 data-i18n="stations_metro_rer">Stations de métro les plus proches</h2>
+                    <p data-i18n="metro_nd"></p>
+                    <p data-i18n="guide_etape_par_etape"> </p>
+                    <ol>
+                        <li data-i18n="etape1_nd">Prenez la ligne 4 direction Porte d’Orléans ou Porte de Clignancourt.</li>
+                        <li data-i18n="etape2_nd">Descendez à la station Cité.</li>
+                        <li data-i18n="etape3_nd">Utilisez la sortie « Notre-Dame » et traversez le pont (2 minutes à pied).</li>
+                        <li data-i18n="etape4_nd">Alternative : ligne 1 jusqu’à Hôtel de Ville puis 8 minutes de marche le long de la Seine.</li>
+                    </ol>
+                </div>
+
+                <div class="fact-0">
+                    <h2 data-i18n="restaurants_cafes">Restaurants & cafés à proximité</h2>
+                    <ul>
+                        <li data-i18n="restaurant1_nd"> </li>
+                        <li data-i18n="restaurant2_nd"></li>
+                        <li data-i18n="restaurant3_nd"></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="map-tour-section">
+                <div class="map-tour-grid">
+                    <div class="map-card">
+                        <h2 data-i18n="map">Carte interactive</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1703.9978461798025!2d2.3484717362921907!3d48.853161403931814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671e19ff53a01%3A0x36401da7abfa068d!2sCath%C3%A9drale%20Notre-Dame%20de%20Paris!5e0!3m2!1sfr!2sro!4v1775684848703!5m2!1sfr!2sro" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="map-card">
+                        <h2 data-i18n="street_view">Visite guidée immersive</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!4v1775728888005!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ2t6TmJBZUE.!2m2!1d48.853127103858!2d2.349515529834127!3f116.56783601733832!4f-3.171570565258179!5f0.7820865974627469" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <h2 data-i18n="advice">Conseil visite guidée</h2>
+                    <p data-i18n="advice_nd">Pour une expérience complète, combinez la visite de Notre-Dame avec une promenade sur les quais de la Seine et une pause gourmande à Berthillon pour déguster les meilleures glaces de Paris.</p>
+                </div>
+            </div>
+
+            <div class="reviews-section">
+                <h2 data-i18n="visitor_reviews">Avis de visiteurs</h2>
+                <div class="reviews-container"></div>
+                <form class="review-form" data-location="notre-dame">
+                    <label for="notredame-reviewer-name"><strong data-i18n="review_name">Nom</strong></label> <strong style="color:red"> *</strong>
+                    <input type="text" id="notredame-reviewer-name" class="reviewer-name" required>
+                    <label for="notredame-review-text"><strong data-i18n="review_text">Avis</strong></label> <strong style="color:red"> *</strong>
+                    <textarea id="notredame-review-text" class="review-text" rows="4" required></textarea>
+                    <label><strong data-i18n="review_rating">Note</strong></label> <strong style="color:red"> *</strong>
+                    <div class="stars">
+                        <input type="radio" id="notredame-star5" name="rating-notredame" value="5">
+                        <label for="notredame-star5">★</label>
+                        <input type="radio" id="notredame-star4" name="rating-notredame" value="4">
+                        <label for="notredame-star4">★</label>
+                        <input type="radio" id="notredame-star3" name="rating-notredame" value="3">
+                        <label for="notredame-star3">★</label>
+                        <input type="radio" id="notredame-star2" name="rating-notredame" value="2">
+                        <label for="notredame-star2">★</label>
+                        <input type="radio" id="notredame-star1" name="rating-notredame" value="1">
+                        <label for="notredame-star1">★</label>
+                    </div>
+                    <button type="submit"><strong data-i18n="submit_review">Soumettre</strong></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-left">
+            <p data-i18n="footer_notice">© 2026  | Tous droits réservés</p>
+            <div class="footer-links">
+                <a href="privacy.html" data-i18n="footer_privacy">Confidentialité</a>
+                <a href="terms.html" data-i18n="footer_terms">Conditions d'Utilisation</a>
+                <a href="https://forms.gle/p7tvY1pFosFmPXE57" data-i18n="footer_survey" target="_blank">Questionnaire de satisfaction</a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="accessibility-dropdown">
+                <button class="accessibility-btn"><span data-i18n="accessibility_btn">Accessibilité</span></button>
+                <ul class="accessibility-menu">
+                    <li><button id="toggle-high-contrast"><span data-i18n="accessibility_contrast">Contraste élevé</span></button></li>
+                    <li><button id="toggle-large-text"><span data-i18n="accessibility_text">Texte plus grand</span></button></li>
+                    <li><button id="toggle-dyslexia-font"><span data-i18n="accessibility_dyslexia">Police dyslexie</span></button></li>
+                    <li><button id="reset-accessibility"><span data-i18n="accessibility_reset">Réinitialiser</span></button></li>
+                </ul>
+            </div>
+            <div class="lang-dropdown">
+                <button class="lang-btn"><span data-i18n="lang_btn">Langue</span></button>
+                <ul class="lang-menu">
+                    <li><button data-lang="fr-FR">Français</button></li>
+                    <li><button data-lang="en-US">English</button></li>
+                    <li><button data-lang="ro-RO">Română</button></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

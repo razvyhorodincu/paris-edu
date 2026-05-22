@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris-Éducation</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/256/203/203026.png">
+    <link rel="stylesheet" href="paris.css">
+    <script src="paris.js" defer></script>
+    <script src="rechercher.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <a href="accueil.html" class="logo">Paris-Édu</a>
+        <ul class="header-links">
+            <li><a href="accueil.html" data-i18n="header_home">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn" data-i18n="header_destinations">Destinations</a>
+                <ul class="dropdown-menu">
+                    <li><a href="tour_eiffel.html" data-i18n="dropdown_tour_eiffel">Tour Eiffel</a></li>
+                    <li><a href="musee_louvre.html" data-i18n="dropdown_musee_louvre">Musée du Louvre</a></li>
+                    <li><a href="chateau_versailles.html" data-i18n="dropdown_chateau_versailles">Château de Versailles</a></li>
+                    <li><a href="notre-dame.html" data-i18n="dropdown_notre_dame">Notre-Dame de Paris</a></li>
+                    <li><a href="disneyland.html" data-i18n="dropdown_disneyland">Disneyland Paris</a></li>
+                </ul>
+            </li>
+            <li><a href="questionnaires.html" data-i18n="header_questionnaires">Questionnaires</a></li>
+            <li><a href="contact.html" data-i18n="header_contact">Contactez-nous</a></li>
+            <form class="header-search" role="search" onsubmit="return false;">
+                <input type="search"
+                       class="header-search-input"
+                       placeholder="🔍 Rechercher"
+                       data-i18n-placeholder="search_placeholder">
+            </form>
+        </ul>
+    </header>
+
+    <div id="home" class="page">
+        <div class="hero">
+            <div class="hero-content">
+                <h1 data-i18n="hero_title">Paris-Édu — Tourisme pour les voyageurs et les élèves</h1>
+                <p data-i18n="hero_intro">Salut ! Voici les 5 sites incontournables de Paris avec toutes les infos officielles 2026 : horaires, prix, adresses, histoire détaillée, fun facts et 5 avis réels de visiteurs.</p>
+                <button class="btn" onclick="window.location.href='tour_eiffel.html'"><span data-i18n="hero_button">Commencer la visite</span></button>
+            </div>
+        </div>
+        <br>
+        <h2 style="text-align:center; margin-bottom:2rem;" data-i18n="home_goal_title">Des objectifs principaux à Paris</h2>
+
+        <div class="cards">
+            <div class="card" onclick="window.location.href='tour_eiffel.html'">
+                <img src="https://www.batobus.com/sites/default/files/2019-08/stations_05_tour_eiffel_introduction_480x700.png" alt="Tour Eiffel">
+                <div class="card-content">
+                    <h3 data-i18n="card_tour_eiffel">La Tour Eiffel</h3>
+                    <p><strong data-i18n="card_tour_eiffel_description">~7 millions de visiteurs/an</strong></p>
+                </div>
+            </div>
+            <div class="card" onclick="window.location.href='musee_louvre.html'">
+                <img src="https://www.unjourdeplusaparis.com/wp-content/uploads/2015/05/photo-louvre-insolite.jpg" alt="Musée du Louvre">
+                <div class="card-content">
+                    <h3 data-i18n="card_louvre">Le Musée du Louvre</h3>
+                    <p><strong data-i18n="card_louvre_description">~9 millions de visiteurs/an</strong></p>
+                </div>
+            </div>
+            <div class="card" onclick="window.location.href='chateau_versailles.html'">
+                <img src="https://www.hotel-roys-versailles.com/wp-content/uploads/roys-versailles/blog/hotel-des-roys-versailles-chateau-de-versailles.webp" alt="Château de Versailles">
+                <div class="card-content">
+                    <h3 data-i18n="card_versailles">Le Château de Versailles</h3>
+                    <p><strong data-i18n="card_versailles_description">~8 millions de visiteurs/an</strong></p>
+                </div>
+            </div>
+            <div class="card" onclick="window.location.href='notre-dame.html'">
+                <img src="https://www.parisselectbook.com/wp-content/uploads/2024/06/retouche-photo-word-press-45.jpg" alt="Notre-Dame">
+                <div class="card-content">
+                    <h3 data-i18n="card_notre_dame">Notre-Dame de Paris</h3>
+                    <p><strong data-i18n="card_notre_dame_description">~12-14 millions de visiteurs/an</strong></p>
+                </div>
+            </div>
+            <div class="card" onclick="window.location.href='disneyland.html'">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/88/Sleeping_Beauty_Castle%2C_Disneyland%2C_Paris.jpg/1280px-Sleeping_Beauty_Castle%2C_Disneyland%2C_Paris.jpg" alt="Disneyland Paris">
+                <div class="card-content">
+                    <h3 data-i18n="card_disneyland">Disneyland Paris</h3>
+                    <p><strong data-i18n="card_disneyland_description">15,8 millions de visiteurs/an</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- NOUVEAU : TRANSPORT + PLAN -->
+        <div class="home-extra faq">
+            <h2 data-i18n="faq_title" style="text-align:center; margin-bottom:2rem;">FAQ — Informations pratiques</h2>
+
+            <details>
+                <summary data-i18n="faq_info">À quoi sert le site Paris‑Éducation ?</summary>
+                <p data-i18n="faq_info_description">Ce site aide les élèves et les visiteurs à découvrir Paris, ses monuments, son histoire et ses principales attractions. Il propose des informations claires, éducatives et accessibles.</p>
+            </details>
+
+            <details>
+                <summary data-i18n="faq_localisation">Ou est Paris ?</summary>
+                <p data-i18n="faq_localisation_description">Paris, la capitale de la France, se trouve dans le centre-nord du pays, au cœur de la région Île-de-France. La ville est traversée par la Seine et se situe au milieu du Bassin parisien.</p>
+            </details>
+
+            <details>
+                <summary data-i18n="faq_arriver">Comment arriver en Paris ?</summary>
+                <p data-i18n="faq_arriver_description">Choisissez le mode de transport voulu : avion pour les vols internationaux ou autocar pour les liaisons économiques vers Paris. Suivez les instructions ci-dessous pour l’arrivée en ville.</p>
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:1.5rem; margin-top:1rem;">
+                    <div style="text-align:center;">
+                        <h3 style="color:var(--red);" data-i18n="faq_avion1">Avion</h3>
+                        <p data-i18n="faq_avion2"><a href="https://www.airfrance.fr" target="_blank">Air France</a> – vols directs depuis la Roumanie [Aéroports OTP, CLJ, IAS et plus encore vers l'aéroport PAR]</p>
+                    </div>
+                    <div style="text-align:center;">
+                        <h3 style="color:var(--red);" data-i18n="faq_autocar1">Autocar</h3>
+                        <p data-i18n="faq_autocar2"><a href="https://www.flixbus.fr" target="_blank">FlixBus</a> – voyages confortables et économiques</p>
+                    </div>
+                </div>
+            </details>
+
+            <details>
+                <summary data-i18n="faq_plan">Plan de visite recommandé (3-4 jours)</summary>
+                <ul style="max-width:800px; margin:1rem auto 0; font-size:1.1rem; padding-left:1.25rem;">
+                    <li data-i18n="faq_plan_3days"><strong>3 jours :</strong> Jour 1 → Tour Eiffel + Notre-Dame (soir illuminations). Jour 2 → Musée du Louvre + balade Seine. Jour 3 → Château de Versailles.</li>
+                    <li data-i18n="faq_plan_4days"><strong>4 jours :</strong> Jour 4 → Disneyland Paris (matin tôt + feux d’artifice le soir).</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary data-i18n="faq_conseil">Conseil voyage</summary>
+                <p data-i18n="faq_conseil_description">Achète les billets en ligne 2-3 semaines avant pour éviter les files et gagne du temps sur place.</p>
+            </details>
+        </div>
+    </div>
+
+   
+    <footer>
+        <div class="footer-left">
+            <p data-i18n="footer_notice">© 2026  | Tous droits réservés</p>
+            <div class="footer-links">
+                <a href="privacy.html" data-i18n="footer_privacy">Confidentialité</a>
+                <a href="terms.html" data-i18n="footer_terms">Conditions d'Utilisation</a>
+                <a href="https://forms.gle/p7tvY1pFosFmPXE57" data-i18n="footer_survey" target="_blank">Questionnaire de satisfaction</a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="accessibility-dropdown">
+                <button class="accessibility-btn"><span data-i18n="accessibility_btn">Accessibilité</span></button>
+                <ul class="accessibility-menu">
+                    <li><button id="toggle-high-contrast"><span data-i18n="accessibility_contrast">Contraste élevé</span></button></li>
+                    <li><button id="toggle-large-text"><span data-i18n="accessibility_text">Texte plus grand</span></button></li>
+                    <li><button id="toggle-dyslexia-font"><span data-i18n="accessibility_dyslexia">Police dyslexie</span></button></li>
+                    <li><button id="reset-accessibility"><span data-i18n="accessibility_reset">Réinitialiser</span></button></li>
+                </ul>
+            </div>
+            <div class="lang-dropdown">
+                <button class="lang-btn"><span data-i18n="lang_btn">Langue</span></button>
+                <ul class="lang-menu">
+                    <li><button data-lang="fr-FR">Français</button></li>
+                    <li><button data-lang="en-US">English</button></li>
+                    <li><button data-lang="ro-RO">Română</button></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

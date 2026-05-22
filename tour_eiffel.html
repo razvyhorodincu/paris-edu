@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Eiffel | Paris-Édu</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/256/203/203026.png">
+    <link rel="stylesheet" href="paris.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase.js" defer></script>
+    <script src="paris.js" defer></script>
+</head>
+
+<body>
+        <header>
+        <a href="accueil.html" class="logo">Paris-Édu</a>
+        <ul class="header-links">
+            <li><a href="accueil.html" data-i18n="header_home">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn" data-i18n="header_destinations">Destinations</a>
+                <ul class="dropdown-menu">
+                    <li><a href="tour_eiffel.html" data-i18n="dropdown_tour_eiffel">Tour Eiffel</a></li>
+                    <li><a href="musee_louvre.html" data-i18n="dropdown_musee_louvre">Musée du Louvre</a></li>
+                    <li><a href="chateau_versailles.html" data-i18n="dropdown_chateau_versailles">Château de Versailles</a></li>
+                    <li><a href="notre-dame.html" data-i18n="dropdown_notre_dame">Notre-Dame de Paris</a></li>
+                    <li><a href="disneyland.html" data-i18n="dropdown_disneyland">Disneyland Paris</a></li>
+                </ul>
+            </li>
+            <li><a href="questionnaires.html" data-i18n="header_questionnaires">Questionnaires</a></li>
+            <li><a href="contact.html" data-i18n="header_contact">Contactez-nous</a></li>
+            <form class="header-search" role="search" onsubmit="return false;">
+                <input type="search"
+                       class="header-search-input"
+                       placeholder="🔍"
+                       data-i18n-placeholder="search_placeholder">
+            </form>
+        </ul>
+    </header>
+
+        <div id="eiffel" class="page">
+        <div class="detail-page">
+            <button class="back-btn" onclick="window.location.href='accueil.html'"><span data-i18n="retour">← Retour à l'accueil</span></button>
+
+            
+            <div class="detail-header">
+                <h1 data-i18n="card_tour_eiffel">La Tour Eiffel</h1>
+            </div>
+
+            <div class="gallery">
+                <img src="https://www.unjourdeplusaparis.com/wp-content/uploads/2017/01/copie-tour-eiffel-monde.jpg" alt="Tour Eiffel de jour">
+                <img src="https://cdn.shopify.com/s/files/1/0657/3100/2634/files/papier-peint-eiffel-tour-eiffel-illuminee-au-crepuscule_bb62dc95-db1e-47ce-a55b-dcd3f1ec690e.png?v=1736345652" alt="Tour Eiffel illuminée">
+                <img src="https://laterreestunjardin.com/wp-content/uploads/2019/10/Tour-Eiffel-Paris-13.jpg" alt="Vue depuis le sommet">
+                <img src="https://cdn.generationvoyage.fr/2015/10/diner-restaurant-58-tour-eiffel-1.jpg" alt="Restaurant au 1er étage">
+            </div>
+
+            <div class="tour-card">
+                <div class="fact">
+                    <h2 data-i18n="histoire">Histoire</h2>
+                    <p data-i18n="eiffel-histoire"></p>
+                </div>
+                <div class="fact">
+                    <h2 data-i18n="infos_pratiques">Infos pratiques</h2>
+                    <p data-i18n="eiffel_info"></p>
+                </div>
+                <div class="fact">
+                    <h2 data-i18n="fun_facts">Fun facts (beaucoup plus !)</h2>
+                    <ul>
+                        <li data-i18n="eiffel_fact1">Elle a été la plus haute du monde jusqu'en 1930</li>
+                        <li data-i18n="eiffel_fact2">Peinte tous les 7 ans (3 tonnes de peinture)</li>
+                        <li data-i18n="eiffel_fact3">Bouge jusqu'à 15 cm avec le vent</li>
+                        <li data-i18n="eiffel_fact4">20 000 ampoules pour les illuminations</li>
+                        <li data-i18n="eiffel_fact5">Pèse 10 000 tonnes et a échappé à la destruction en 1940</li>
+                    </ul>
+                </div>
+                <!-- NOUVEAU : RESTAURANTS, HÔTELS, PARC -->
+                <div class="fact">
+                    <h2 data-i18n="restaurants_cafes">Restaurants & cafés à proximité</h2>
+                    <ul>
+                        <li data-i18n="eiffel_restaurant1"><strong></strong> – restaurant étoilé Michelin au 1er étage de la Tour</li>
+                        <li data-i18n="eiffel_restaurant2"><strong></strong> – brasserie chic avec vue panoramique</li>
+                        <li data-i18n="eiffel_restaurant3"><strong></strong> (à 5 min) – cuisine française traditionnelle, très bon rapport qualité-prix</li>
+                    </ul>
+                </div>
+                <div class="fact">
+                    <h2 data-i18n="relaxing_spot">Lieu pour se relaxer</h2>
+                    <p data-i18n="champ_mars"><strong></strong> – le grand parc juste au pied de la Tour. Idéal pour un pique-nique, photos ou détente après la visite (herbe, fontaines, vue imprenable).</p>
+                </div>
+
+                <div class="fact">
+                    <h2 data-i18n="stations_metro_rer">Stations de métro les plus proches</h2>
+                    <p data-i18n="metro_eiffel"><b></b> Bir-Hakeim (ligne 6), École Militaire (ligne 8)</p>
+                    <p data-i18n="guide_etape_par_etape"><b></b></p>
+                    <ol>
+                        <li data-i18n="eiffel_etape1">Depuis le centre de Paris, prenez la ligne 6 direction Charles de Gaulle-Étoile ou Nation.</li>
+                        <li data-i18n="eiffel_etape2">Descendez à la station Bir-Hakeim.</li>
+                        <li data-i18n="eiffel_etape3">Utilisez la sortie « Tour Eiffel » et marchez environ 300 mètres jusqu’au pied de la Tour.</li>
+                        <li data-i18n="eiffel_etape4">Alternative : prenez la ligne 8 jusqu’à École Militaire, puis 10 minutes de marche par l’avenue de Suffren.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="map-tour-section">
+                <div class="map-tour-grid">
+                    <div class="map-card">
+                        <h2 data-i18n="map">Carte interactive</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916261109456!2d2.2919063763144942!3d48.85837007133219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sro!4v1775683943070!5m2!1sfr!2sro" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="map-card">
+                        <h2 data-i18n="street_view">Visite guidée immersive</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!4v1775729566953!6m8!1m7!1sj_-ISF7xtAeCAONnUfDPsA!2m2!1d48.85829583950746!2d2.294746624433628!3f62.395501170846764!4f-1.970643958391463!5f0.4000000000000002" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <h2 data-i18n="advice">Conseil visite guidée</h2>
+                    <p data-i18n="advice_eiffel">Pour tirer le meilleur parti de la Tour Eiffel, réservez une visite guidée tôt le matin et combinez-la avec un accès prioritaire pour monter au sommet. Cette visite virtuelle donne déjà une bonne idée du parcours et des meilleurs points de vue.</p>
+                </div>
+            </div>
+
+            <div class="reviews-section">
+                <h2 data-i18n="visitor_reviews">Avis de visiteurs</h2>
+                <div class="reviews-container"></div>
+                <form class="review-form" data-location="tour_eiffel">
+                    <label for="eiffel-reviewer-name"><strong data-i18n="review_name">Nom </strong></label><strong style="color:red"> *</strong>
+                    <input type="text" id="eiffel-reviewer-name" class="reviewer-name" required>
+                    <label for="eiffel-review-text"><strong data-i18n="review_text">Avis</strong></label> <strong style="color:red"> *</strong>
+                    <textarea id="eiffel-review-text" class="review-text" rows="4" required></textarea>
+                    <label><strong data-i18n="review_rating">Note</strong></label> <strong style="color:red"> *</strong>
+                    <div class="stars">
+                        <input type="radio" id="eiffel-star5" name="rating-eiffel" value="5">
+                        <label for="eiffel-star5">★</label>
+                        <input type="radio" id="eiffel-star4" name="rating-eiffel" value="4">
+                        <label for="eiffel-star4">★</label>
+                        <input type="radio" id="eiffel-star3" name="rating-eiffel" value="3">
+                        <label for="eiffel-star3">★</label>
+                        <input type="radio" id="eiffel-star2" name="rating-eiffel" value="2">
+                        <label for="eiffel-star2">★</label>
+                        <input type="radio" id="eiffel-star1" name="rating-eiffel" value="1">
+                        <label for="eiffel-star1">★</label>
+                    </div>
+                    <button type="submit"><strong data-i18n="submit_review">Soumettre</strong></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-left">
+            <p data-i18n="footer_notice">© 2026  | Tous droits réservés</p>
+            <div class="footer-links">
+                <a href="privacy.html" data-i18n="footer_privacy">Confidentialité</a>
+                <a href="terms.html" data-i18n="footer_terms">Conditions d'Utilisation</a>
+                <a href="https://forms.gle/p7tvY1pFosFmPXE57" data-i18n="footer_survey" target="_blank">Questionnaire de satisfaction</a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="accessibility-dropdown">
+                <button class="accessibility-btn"><span data-i18n="accessibility_btn">Accessibilité</span></button>
+                <ul class="accessibility-menu">
+                    <li><button id="toggle-high-contrast"><span data-i18n="accessibility_contrast">Contraste élevé</span></button></li>
+                    <li><button id="toggle-large-text"><span data-i18n="accessibility_text">Texte plus grand</span></button></li>
+                    <li><button id="toggle-dyslexia-font"><span data-i18n="accessibility_dyslexia">Police dyslexie</span></button></li>
+                    <li><button id="reset-accessibility"><span data-i18n="accessibility_reset">Réinitialiser</span></button></li>
+                </ul>
+            </div>
+            <div class="lang-dropdown">
+                <button class="lang-btn"><span data-i18n="lang_btn">Langue</span></button>
+                <ul class="lang-menu">
+                    <li><button data-lang="fr-FR">Français</button></li>
+                    <li><button data-lang="en-US">English</button></li>
+                    <li><button data-lang="ro-RO">Română</button></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

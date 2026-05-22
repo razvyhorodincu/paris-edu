@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>you've been trolled lmao | Paris-Édu</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/256/203/203026.png">
+    <link rel="stylesheet" href="paris.css">
+    <script src="paris.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="accueil.html" class="logo">Paris-Édu</a>
+        <ul class="header-links">
+            <li><a href="accueil.html" data-i18n="header_home">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn" data-i18n="header_destinations">Destinations</a>
+                <ul class="dropdown-menu">
+                    <li><a href="tour_eiffel.html" data-i18n="dropdown_tour_eiffel">Tour Eiffel</a></li>
+                    <li><a href="musee_louvre.html" data-i18n="dropdown_musee_louvre">Musée du Louvre</a></li>
+                    <li><a href="chateau_versailles.html" data-i18n="dropdown_chateau_versailles">Château de Versailles</a></li>
+                    <li><a href="notre-dame.html" data-i18n="dropdown_notre_dame">Notre-Dame de Paris</a></li>
+                    <li><a href="disneyland.html" data-i18n="dropdown_disneyland">Disneyland Paris</a></li>
+                </ul>
+            </li>
+            <li><a href="questionnaires.html" data-i18n="header_questionnaires">Questionnaires</a></li>
+            <li><a href="contact.html" data-i18n="header_contact">Contactez-nous</a></li>
+            <form class="header-search" role="search" onsubmit="return false;">
+                <input type="search"
+                       class="header-search-input"
+                       placeholder="🔍"
+                       data-i18n-placeholder="search_placeholder">
+            </form>
+        </ul>
+    </header>
+
+    <div class="page" style="display: flex; justify-content: center; align-items: center; padding-top: 80px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/718smiley.png" height="256" width="256" alt="Smiley face">
+    </div>
+
+    <footer>
+        <div class="footer-left">
+            <p data-i18n="footer_notice">© 2026  | Tous droits réservés</p>
+            <div class="footer-links">
+                <a href="privacy.html" data-i18n="footer_privacy">Confidentialité</a>
+                <a href="terms.html" data-i18n="footer_terms">Conditions d'Utilisation</a>
+                <a href="https://forms.gle/p7tvY1pFosFmPXE57" data-i18n="footer_survey" target="_blank">Questionnaire de satisfaction</a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="accessibility-dropdown">
+                <button class="accessibility-btn" data-i18n="accessibility_btn">Accessibilité</button>
+                <ul class="accessibility-menu">
+                    <li><button id="toggle-high-contrast" data-i18n="accessibility_contrast">Contraste élevé</button></li>
+                    <li><button id="toggle-large-text" data-i18n="accessibility_text">Texte plus grand</button></li>
+                    <li><button id="toggle-dyslexia-font" data-i18n="accessibility_dyslexia">Police dyslexie</button></li>
+                    <li><button id="reset-accessibility" data-i18n="accessibility_reset">Réinitialiser</button></li>
+                </ul>
+            </div>
+            <div class="lang-dropdown">
+                <button class="lang-btn" data-i18n="lang_btn">Langue</button>
+                <ul class="lang-menu">
+                    <li><button data-lang="fr-FR" data-i18n="lang_fr">Français</button></li>
+                    <li><button data-lang="en-US" data-i18n="lang_en">English</button></li>
+                    <li><button data-lang="ro-RO" data-i18n="lang_ro">Română</button></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
